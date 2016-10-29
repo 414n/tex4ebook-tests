@@ -1,5 +1,5 @@
 *~
-*.ops
+*.opf
 *.4??
 *.aux
 *.css
@@ -14,3 +14,4 @@
 *.ncx
 *.tmp
 *.xref
+test-epub
