@@ -1,0 +1,17 @@
+local filter = require "make4ht-filter"
+
+local function fix_href_colons(s)
+  return s:gsub('(href=".-")', function(a)
+    if a:match("[a-z]%://") then return a end
+    return a:gsub(":","_")
+  end)
+end
+
+local function fix_id_colons(s)
+  return s:gsub('(id=".-")', function(a)
+    return a:gsub(":", "_")
+  end)
+end
+
+local process = filter {fix_href_colons, fix_id_colons}
+Make:match("html$", process)

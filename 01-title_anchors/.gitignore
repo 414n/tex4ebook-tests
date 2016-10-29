@@ -1,0 +1,16 @@
+*~
+*.ops
+*.4??
+*.aux
+*.css
+*.dvi
+*.epub
+*.gl?
+*.html
+*.idv
+*.ist
+*.lg
+*.log
+*.ncx
+*.tmp
+*.xref
