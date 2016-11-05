@@ -9,3 +9,6 @@ clean:
 
 tex4ebook: clean
 	tex4ebook -t -c conv2html.cfg -e my_filters.mk4 test.tex
+
+PDF: clean
+	latexmk -xelatex test.tex
